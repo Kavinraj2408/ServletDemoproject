@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="https://jakarta.ee/xml/ns/jakartaee" xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee https://jakarta.ee/xml/ns/jakartaee/web-app_6_0.xsd" id="WebApp_ID" version="6.0">
+  
+  
+  <servlet>
+     <servlet-name>Login</servlet-name>
+     <servlet-class>com.kavin.LoginServlet</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+     <servlet-name>Login</servlet-name>
+     <url-pattern>/login</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+     <servlet-name>Payment</servlet-name>
+     <servlet-class>com.kavin.PaymentServlet</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+     <servlet-name>Payment</servlet-name>
+     <url-pattern>/payment</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+     <servlet-name>Mine</servlet-name>
+     <servlet-class>com.kavin.MyServlet</servlet-class>
+     
+     <init-param>
+     	<param-name>name</param-name>
+     	<param-value>Pavi</param-value>
+     </init-param>
+  </servlet>
+  
+  <servlet-mapping>
+     <servlet-name>Mine</servlet-name>
+     <url-pattern>/demo</url-pattern>
+  </servlet-mapping>
+  
+  <context-param>
+     <param-name>name</param-name>
+     <param-value>Kavin</param-value>
+  </context-param>
+  
+  <context-param>
+     <param-name>phone</param-name>
+     <param-value>Poco X5</param-value>
+  </context-param>
+</web-app>
